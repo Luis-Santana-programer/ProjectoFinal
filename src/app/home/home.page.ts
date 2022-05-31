@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private geolocation: Geolocation, ) {}
 
+  Gps(){}
 }
